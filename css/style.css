@@ -817,4 +817,9 @@
   #place{
     margin-top:70px;
   }
+  .title-text{
+    font-size: 30px !important;
+    margin-top: 300px;
+    padding: 0 !important;
+  }
 }
