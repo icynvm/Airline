@@ -2,345 +2,552 @@
 <html lang="en">
 
 <head>
-  <!-- basic -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- mobile metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-  <!-- site metas -->
-  <title>Neco</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- bootstrap css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- style css -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Responsive-->
-  <link rel="stylesheet" href="css/responsive.css">
-  <!-- fevicon -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-  <!-- Tweaks for older IEs-->
-  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-  <!-- owl stylesheets -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-    media="screen">
+    <meta charset="utf-8">
+    <title>GrowMark - Digital Marketing HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- header top section start -->
-  <div class="header_top_section">
-    <div class="container">
-      <div class="header_main">
-        <div class="location_text"><img src="images/map-icon.png"><span class="padding_left_10"><a
-              href="#">Location</a></span></div>
-        <div class="location_text center"><img src="images/call-icon.png"><span class="padding_left_10"><a href="#">Call
-              ; 01 1234567890</a></span></div>
-        <div class="location_text right"><img src="images/mail-icon.png"><span class="padding_left_10"><a
-              href="#">demo@gmail.com</a></span></div>
-      </div>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
     </div>
-  </div>
-  <!-- header top section end -->
-  <!-- header section start -->
-  <div class="header_section">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="logo" href="index.html"><img src="images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="repair.html">Repair</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <div class="search_icon"><a href="#"><img src="images/search-icon.png"></a></div>
-          </form>
+    <!-- Spinner End -->
+
+
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="fw-bold m-0">GrowMark</h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#partner" class="nav-item nav-link">Partner</a>
+                        <a href="#place" class="nav-item nav-link">Place-Recommended</a>
+                        <a href="#exp" class="nav-item nav-link">Experience</a>
+                        <a href="#feedback" class="nav-item nav-link">Review</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-block">
+                        <a href="" class="rounded-pill py-2 px-3" style="color:black !important">login</a>
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-3" <a href=""
+                            class="btn btn-primary rounded-pill py-2 px-3"
+                            style="background-color: #1C2035 !important; border-color: #1C2035 !important;">sign up</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </nav>
     </div>
-    <!-- banner section start -->
-    <div class="banner_section layout_padding">
-      <div id="main_slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <section id="home">
+        <div class="container-fluid px-0 mb-5">
+            <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/ap2.jpg" alt="Image" style="opacity:0.4;">
+                        <div class="carousel-caption">
+
+                            <div class="container">
+                                <div class="justify-content-center">
+                                    <h1 class="text-uppercase text-white"
+                                        style="padding: 50px; font-size: 60px !important;">Ize airline Travel</h1>
+                                </div>
+                                <div id="booking" class="section">
+                                    <div class="section-center">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-7 col-md-offset-1">
+                                                    <div class="booking-form" style="margin-left: 310px;">
+                                                        <form>
+                                                            <div class="form-group">
+                                                                <div class="form-checkbox">
+                                                                    <label for="roundtrip">
+                                                                        <input type="radio" id="roundtrip"
+                                                                            name="flight-type">
+                                                                        <span></span>Roundtrip
+                                                                    </label>
+                                                                    <label for="one-way">
+                                                                        <input type="radio" id="one-way"
+                                                                            name="flight-type">
+                                                                        <span></span>One way
+                                                                    </label>
+                                                                    <label for="multi-city">
+                                                                        <input type="radio" id="multi-city"
+                                                                            name="flight-type">
+                                                                        <span></span>Multi-City
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Flying from</span>
+                                                                        <input class="form-control" type="text"
+                                                                            placeholder="City or airport">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Flyning to</span>
+                                                                        <input class="form-control" type="text"
+                                                                            placeholder="City or airport">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Departing</span>
+                                                                        <input class="form-control" type="date"
+                                                                            required>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Returning</span>
+                                                                        <input class="form-control" type="date"
+                                                                            required>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Adults (18+)</span>
+                                                                        <select class="form-control">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                        </select>
+                                                                        <span class="select-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Children (0-17)</span>
+                                                                        <select class="form-control">
+                                                                            <option>0</option>
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                        </select>
+                                                                        <span class="select-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <span class="form-label">Travel class</span>
+                                                                        <select class="form-control">
+                                                                            <option>Economy class</option>
+                                                                            <option>Business class</option>
+                                                                            <option>First class</option>
+                                                                        </select>
+                                                                        <span class="select-arrow"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-btn">
+                                                                <button class="submit-btn">Show flights</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+    <script>
+        var typed2 = new Typed('#typed2', {
+            strings: ['ize airline travel'],
+            typeSpeed: 50,
+            backSpeed: 20,
+            backDelay: 4000,
+            cursorChar: '.',
+            loop: true
+        });
+
+    </script>
+    <!-- Carousel End -->
+
+
+    <!-- Features Start -->
+    <section id="partner">
+        <div class="container-xxl py-5">
             <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <h1 class="banner_taital">Tablates And Phons Repair Service</h1>
-                  <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration</p>
-                  <div class="btn_main">
-                    <div class="read_bt"><a href="#">Read More</a></div>
-                    <div class="contact_bt active"><a href="#">Contact US</a></div>
-                  </div>
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <!-- <p class="fs-5 fw-medium text-primary">Our Services</p> -->
+                    <h1 class="display-5 mb-5">Our partner</h1>
                 </div>
-                <div class="col-md-6">
-                  <div class="image_1"><img src="images/img-1.png"></div>
+                <br>
+                <div class="row g-0 space-sec">
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="feature-item h-100 p-5">
+                            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
+                                <img class="justify-content-center" src="img/icon/aa.jpg" alt="Icon" width="500"
+                                    height="200">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="feature-item h-100 p-5">
+                            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
+                                <img class="" src="img/icon/Garuda-Indonesia.jpg" alt="Icon" width="400" height="200">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="feature-item h-100 p-5">
+                            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
+                                <img class="" src="img/icon/IranAir.jpg" alt="Icon" width="300" height="200">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="feature-item h-100 p-5">
+                            <div class="btn-square   mb-4" style="width: 64px; height: 64px;">
+                                <img class="" src="img/icon/jpn.png" alt="Icon" width="400" height="200">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="carousel-item">
+        </div>
+    </section>
+    <!-- Features End -->
+
+    <div style="padding:70px"></div>
+    <!-- place Start -->
+    <section id="place">
+        <div class="container-xxl pt-5">
             <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <h1 class="banner_taital">Tablates And Phons Repair Service</h1>
-                  <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration</p>
-                  <div class="btn_main">
-                    <div class="read_bt"><a href="#">Read More</a></div>
-                    <div class="contact_bt active"><a href="#">Contact US</a></div>
-                  </div>
+                <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium text-primary">Our Projects</p> -->
+                    <h1 class="display-5 mb-5">Travel with us.</h1>
                 </div>
-                <div class="col-md-6">
-                  <div class="image_1"><img src="images/img-1.png"></div>
+                <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/Amalfi-Coast-Italy.jpg.webp" alt="" width="550"
+                                height="400">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1"
+                                    href="img/Amalfi-Coast-Italy.jpg.webp" data-lightbox="project"><i
+                                        class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Amalfi Coast, Italy</a>
+                            <!-- <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span> -->
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/57e4510ea1e3051b008b4c9f.webp" alt="" width="550"
+                                height="400">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1"
+                                    href="img/57e4510ea1e3051b008b4c9f.webp" data-lightbox="project"><i
+                                        class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Bangkok, Thailand</a>
+                            <!-- <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span> -->
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/download.jfif" alt="" width="550" height="400">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/download.jfif"
+                                    data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Nanjing Fuzimiao, China</a>
+                            <!-- <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem</span> -->
+                        </div>
+                    </div>
+                    <div class="project-item mb-5">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/ocean.webp" alt="" width="550" height="400">
+                            <div class="project-overlay">
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href="img/ocean.webp"
+                                    data-lightbox="project"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <a class="d-block h5" href="">Phuket, Thailand</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="carousel-item">
+        </div>
+    </section>
+    <!-- place End -->
+
+
+    <br>
+    <br>
+    <br>
+    <!-- review Start -->
+    <section id="exp">
+        <div class="container-xxl py-5">
             <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <h1 class="banner_taital">Tablates And Phons Repair Service</h1>
-                  <p class="banner_text">There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration</p>
-                  <div class="btn_main">
-                    <div class="read_bt"><a href="#">Read More</a></div>
-                    <div class="contact_bt active"><a href="#">Contact US</a></div>
-                  </div>
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium text-primary">Our Team</p> -->
+                    <h1 class="display-5 mb-8">Get ready to embark on your dream journey, hassle-free!</h1>
                 </div>
-                <div class="col-md-6">
-                  <div class="image_1"><img src="images/img-1.png"></div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/rv-1.jpg" alt="" width="550" height="650">
+                            <h5>Unveil the allure of extraordinary places that will captivate your heart and soul.</h5>
+                            <!-- <span class="text-primary">Founder & CEO</span> -->
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/rv-2.jpg" alt="">
+                            <h5>Experience convenience at its best with our easy</h5>
+                            <!-- <span class="text-primary">Co Founder</span> -->
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/rv-3.webp" alt="">
+                            <h5>Discover the hidden gems of travel and let your wanderlust guide you.</h5>
+                            <!-- <span class="text-primary">Executive Manager</span> -->
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden pb-4">
+                            <img class="img-fluid mb-4" src="img/rv-4.jpg" alt="">
+                            <h5>Escape to paradise and let your senses be enchanted by the wonders of incredible travel
+                                spots.</h5>
+                            <!-- <span class="text-primary">Digital Marketer</span> -->
+                            <ul class="team-social">
+                                <li><a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="btn btn-square" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-          <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-          <i class="fa fa-angle-right"></i>
-        </a>
-      </div>
-    </div>
-    <!-- banner section end -->
-  </div>
-  <!-- header section end -->
-  <!-- about section start -->
-  <div class="about_section layout_padding">
-    <div class="container">
-      <h1 class="about_taital">About Repair shop</h1>
-      <p class="about_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-        believable. If</p>
-      <div class="about_section_2">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="image"><img src="images/img-2.png"></div>
-          </div>
-          <div class="col-md-6">
-            <div class="image_2"><img src="images/img-3.png"></div>
-          </div>
-        </div>
-      </div>
-      <p class="about_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-        believable. If</p>
-      <div class="readmore_bt"><a href="#">Read More</a></div>
-    </div>
-  </div>
-  <!-- about section end -->
-  <!--  blog section start -->
-  <div class="blog_section layout_padding">
-    <div class="container-fluid">
-      <h1 class="blog_taital">What We Do</h1>
-      <p class="blog_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some </p>
-      <div class="blog_section_2">
-        <div class="row">
-          <div class="col-md-6 padding_left_0">
-            <div class="image_4" href="#"><img src="images/img-4.png"></div>
-          </div>
-          <div class="col-md-6">
-            <h4 class="laptop_text">Mobiles Repair </h4>
-            <p class="ipsum_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-              suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-              believable. If you are going to use a passage of Lorem Ipsum, you need to be sure </p>
-            <div class="read_bt_2"><a href="#">Read More</a></div>
-          </div>
-        </div>
-        <div class="blog_section_3">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="blog_taital_main">
-                <h4 class="laptop_text">Tablate Rapair</h4>
-                <p class="ipsum_text">There are many variations of passages of Lorem Ipsum available, but the majority
-                  have suffered alteration in some form, by injected humour, or randomised words which don't look even
-                  slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure </p>
-                <div class="read_bt_2"><a href="#">Read More</a></div>
-              </div>
+    </section>
+    <!-- review End -->
+
+
+    <!-- feedback Start -->
+    <section id="feedback">
+        <div class="container-xxl pt-5">
+            <div class="container">
+                <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                    style="max-width: 500px;">
+                    <!-- <p class="fs-5 fw-medium text-primary">Testimonial</p> -->
+                    <h1 class="display-5 mb-5">What Customer Say About Experience!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                        <img class="mb-4" src="img/testimonial-1.jpg" alt="">
+                        <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                            lorem et
+                            sit, sed stet lorem sit clita duo justo</p>
+                        <h5>Client Name</h5>
+                        <span class="text-primary">Customer</span>
+                    </div>
+                    <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                        <img class="mb-4" src="img/testimonial-2.jpg" alt="">
+                        <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                            lorem et
+                            sit, sed stet lorem sit clita duo justo</p>
+                        <h5>Client Name</h5>
+                        <span class="text-primary">Customer</span>
+                    </div>
+                    <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                        <img class="mb-4" src="img/testimonial-3.jpg" alt="">
+                        <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                            lorem et
+                            sit, sed stet lorem sit clita duo justo</p>
+                        <h5>Client Name</h5>
+                        <span class="text-primary">Customer</span>
+                    </div>
+                    <div class="testimonial-item rounded p-4 p-lg-5 mb-5">
+                        <img class="mb-4" src="img/testimonial-4.jpg" alt="">
+                        <p class="mb-4">Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                            lorem et
+                            sit, sed stet lorem sit clita duo justo</p>
+                        <h5>Client Name</h5>
+                        <span class="text-primary">Customer</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 padding_right_0">
-              <div class="image_5" href="#"><img src="images/img-5.png"></div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s" id="contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Our contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>333 Street, Bangkok, thailand</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0888888888</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>izemockup@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-light rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="blog_section_2">
-          <div class="row">
-            <div class="col-md-6 padding_left_0">
-              <div class="image_4" href="#"><img src="images/img-6.png"></div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium text-light" href="#">Ize</a>, All Right Reserved.
+                </div>
+
             </div>
-            <div class="col-md-6">
-              <h4 class="laptop_text">Laptop And pc Repair</h4>
-              <p class="ipsum_text">There are many variations of passages of Lorem Ipsum available, but the majority
-                have suffered alteration in some form, by injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure </p>
-              <div class="read_bt_2"><a href="#">Read More</a></div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!--  blog section end -->
-  <!--  repair section start -->
-  <div class="repair_section layout_padding">
-    <div class="container">
-      <h1 class="repair_taital">Who we are</h1>
-      <p class="repair_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-        believable. If</p>
-      <div class="image_7"><img src="images/img-7.png"></div>
-      <p class="about_text">There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
-        believable. If</p>
-      <div class="readmore_bt"><a href="#">Get A Quote</a></div>
-    </div>
-  </div>
-  <!--  repair section end -->
-  <!-- contact section start -->
-  <div class="contact_section layout_padding">
-    <div class="container-fluid">
-      <h1 class="contact_taital">Contact Us</h1>
-      <p class="contact_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      </p>
-      <div class="contact_section_2">
-        <div class="row">
-          <div class="col-md-6 padding_left_0">
-            <div class="map_main">
-              <div class="map-responsive">
-                <iframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France"
-                  width="600" height="550" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="mail_section_1">
-              <input type="text" class="mail_text" placeholder="Name" name="text">
-              <input type="text" class="mail_text" placeholder="Email" name="text">
-              <input type="text" class="mail_text" placeholder="Phone Number" name="text">
-              <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-              <div class="send_bt"><a href="#">SEND</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- contact section end -->
-  <!-- footer section start -->
-  <div class="footer_section">
-    <div class="container">
-      <div class="footer_location_text">
-        <ul>
-          <li><img src="images/map-icon.png"><span class="padding_left_10"><a href="#">Loram Ipusm hosting
-                web</a></span></li>
-          <li><img src="images/call-icon.png"><span class="padding_left_10"><a href="#">Call : +7586656566</a></span>
-          </li>
-          <li><img src="images/mail-icon.png"><span class="padding_left_10"><a href="#">demo@gmail.com</a></span></li>
-        </ul>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <h2 class="useful_text">Useful link </h2>
-          <div class="footer_menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="repair.html">Service</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h2 class="useful_text">Repair</h2>
-          <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliqua Loreadipiscing </p>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <h2 class="useful_text">social media</h2>
-          <div class="social_icon">
-            <ul>
-              <li><a href="#"><img src="images/fb-icon.png"></a></li>
-              <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-              <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-              <li><a href="#"><img src="images/youtub-icon.png"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3">
-          <h1 class="useful_text">Our Repair center</h1>
-          <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end info section -->
-  <!-- footer section end -->
-  <!-- copyright section start -->
-  <div class="copyright_section">
-    <div class="container">
-      <p class="copyright_text">2019 All Rights Reserved. Design by <a href="https://html.design">Free html
-          Templates</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></p>
-    </div>
-  </div>
-  <!-- copyright section end -->
-  <!-- Javascript files-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.0.0.min.js"></script>
-  <script src="js/plugin.js"></script>
-  <!-- sidebar -->
-  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="js/custom.js"></script>
-  <!-- javascript -->
-  <script src="js/owl.carousel.js"></script>
-  <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
